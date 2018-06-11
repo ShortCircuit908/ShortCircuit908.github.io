@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RPG</title>
+        <link rel="stylesheet" href="rpg.css">
+        <script type="application/javascript" src="rpg.js"></script>
+    </head>
+    <body>
+        <div class="adventure-container">
+            <div class="adventure-log" id="log">
+
+            </div>
+            <label>
+                <input class="adventure-input" type="text" id="input">
+            </label>
+        </div>
+        <script type="text/javascript">
+            var log_element = document.getElementById("log");
+            var input_element = document.getElementById("input");
+            var rpg = new RPG(log_element, input_element);
+        </script>
+    </body>
+</html>
